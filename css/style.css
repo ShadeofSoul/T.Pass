@@ -1,0 +1,699 @@
+
+* {
+    margin: 0;
+    padding: 0;
+    font-family: 'Roboto',  sans-serif;
+}
+
+
+/* navbar */
+
+.navbar {
+    height: 110px;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.nav__inner {
+    width:  1210px;
+    height: 50px;
+    display: flex;
+    justify-content: space-between;
+    padding: 0 50px;
+}
+.nav__inner_list {
+    width: 410px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+ .nav__inner_list a {
+    text-decoration: none;
+    font-weight: 700;
+    color:#0f2336;
+    cursor: pointer;
+    font-size: 14px;
+}
+
+.nav__inner_list button{
+    width: 122px;
+    height: 50px;
+    display: flex;
+    font-size: 14px;
+    justify-content: center;
+    align-items: center;
+    background-color: #0f2336;
+    color: white;
+    cursor: pointer;
+    border: none;
+    box-sizing: border-box;
+    border-radius: 8px;
+}
+/* Burger */
+
+#menu__toggle {
+	opacity: 0;
+    position: absolute;
+}
+
+.menu__btn {
+	display: flex;
+	align-items: center;
+	position: fixed;
+	visibility: hidden;
+	top: 50px;
+	right: 60px;
+	cursor: pointer;
+	width: 26px;
+	height: 26px;
+	z-index: 2;
+}
+
+.menu__btn > span,
+.menu__btn > span::before,
+.menu__btn > span::after {
+	display: block;
+	position: absolute;
+	width: 100%;
+	height: 2px;
+	background-color: #0f2336;
+	transition: 0.5s all;
+}
+
+.menu__btn > span::before {
+	content: "";
+	top: 8px;
+}
+
+.menu__btn > span::after {
+	content: "";
+	top: 16px;
+}
+
+#menu__toggle:checked ~ .menu__btn > span {
+	
+	transform: translateY(8px) rotate(-45deg);
+}
+
+#menu__toggle:checked ~ .menu__btn > span::before {
+
+	display: none;
+}
+
+#menu__toggle:checked ~ .menu__btn > span::after {
+	top: 0;
+	transform: rotate(90deg);
+}
+
+#menu__toggle:checked ~ .menu__box {
+	display: block;
+	visibility: visible;
+	right: 0;
+}
+
+
+
+
+/* people  */
+.container {
+    width: 100%;
+    max-width: 1440px;
+    margin: 0 auto;
+}
+
+.people__inner {
+    display: flex;
+    height: auto;
+    margin: 60px 0;
+
+}
+.people__left {
+    z-index: 1;
+    padding-left: 65px;
+    width: 70%;
+}
+.people__left h1 {
+    width: 550px;
+    color: #0f2336;
+    font-size: 55px;
+    line-height: 76px;
+    margin-bottom: 50px;
+}
+.people__left span {
+    font-size: 55px;
+}
+
+
+.people__left button {
+    background-color: #00cccc;
+    color: #0f2336;
+    font-size: 18px;
+    font-weight: 700;
+    width: 208px;
+    height: 60px;
+    border-radius: 14px;
+    border: none;
+    cursor: pointer;
+    outline: none;
+    box-shadow: 0 3px 18px rgba(0, 201, 201, 0.55);
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+}
+
+.people__right {
+    width: 900px;
+    height: 700px;
+    position: relative;
+}
+.people__right img {
+    width: 750px;
+    height: 650px;
+    position: absolute;
+    top: 0;
+    right: 150px;
+}
+
+/* Benefits  */
+
+
+.benefits {
+    height: 300px;
+}
+
+.gallery {
+    display: none;
+}
+
+.not-gallery{
+    width: 100%;
+    height: 400px;
+    justify-content: space-evenly;
+    display: flex;
+}
+
+.benefits__item {
+    width: 300px;
+}
+/* .benefits__item:first-child {
+    margin-left: -40px;
+} */
+
+.benefits__item h2 {
+    font-size: 25px;
+    line-height: 1.28;
+    letter-spacing: 0.2px;
+    margin: 12px 0;
+}
+
+.benefits__item p {
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 1.5;
+    color: #576D81;
+}
+/* phone  */
+
+.list-1{
+    margin-top: 12px;
+    color: #576D79;
+    font-size: 16px;
+    font-weight: 400;
+}
+.phone__inner {
+    display: flex;
+    justify-content: space-between;
+    position: relative;
+ }
+
+.phone__left {
+    background: url(../img/телефон.png);
+    height: 640px;
+    width: 585px;
+    bottom: 0;
+    left: 21px;
+    position: absolute;
+}
+
+.phone__right {
+    background-color:#F5F6F7;
+    border-radius: 40px;
+    width: 1140px;
+    height: 540px;
+    margin: 100px 0px 77px 0px;
+    margin-left: 100px;
+}
+ 
+.mark {
+    color: #0f2336;
+    font-size: 40px;
+    font-weight: 900;
+}
+
+.text {
+    flex-direction: column;
+    align-items: flex-end ;
+    height: 600px;
+    width: 400px;
+    margin-left: 550px;
+    margin-top: 70px;
+}
+
+/* girl */
+
+
+.girl {
+    background-color: #F4F5F6;
+    margin-top: 200px;
+}
+.girl__inner{
+    width: 1300px;
+    display: flex;
+    justify-content: center;
+}
+
+.girl .container {
+    height: 527px;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+}
+
+.girl__left {
+    width: 550px;
+    height: 627px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: flex-start;
+}
+
+.girl__right, .girl__cards-2{
+    align-self: flex-end;
+}
+
+
+.girl__cards {
+    width: 455px;
+    height: 140px;
+    padding: 25px;
+    background: #FFFFFF;
+    border-radius: 8px;
+    box-shadow: 0px 8px 32px rgba(15, 35, 54, 0.06);
+}
+
+.girl__cards h2 {
+    width: 100%;
+    display: flex;
+    align-items: center;
+}
+
+.girl__cards h2 img {
+    width: 50px;
+    height: 50px;
+}
+
+.girl__cards h2 span {
+    padding-left: 25px;
+    font-size: 25px;
+    font-weight: 700;
+    line-height: 1;
+}
+
+.girl__cards p {
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 1.3;
+    color: #576D79;
+    padding: 20px 10px 25px 75px;   
+}
+
+/* Phone number 2  */
+.phone-2{
+   height: 300px;
+   margin-bottom: 700px;
+   z-index: 0;
+}
+
+.second-phone {
+    background: url(../img/phone-2.png);
+    height: 640px;
+    width: 540px;
+    position: absolute;
+    bottom: 0;
+    right: 20px;
+}
+
+.send {
+    background-color:#F5F6F7;
+    border-radius: 40px;
+    width: 1140px;
+    height: 540px;
+    margin: 300px 0px 77px 100px;
+}
+
+.sendgift {
+    flex-direction: column;
+    align-items: flex-start ;
+    height: 600px;
+    width: 400px;
+    margin-left: 100px;
+    margin-top: 70px;
+}
+
+/* Store Start  */
+
+.store__inner {
+    width: 400px;
+    height: 500px;
+    margin: 0 auto;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+.magazin {
+    text-align: center;
+}
+
+.number {
+    display: flex;
+    justify-content: flex-start;
+    align-items: baseline;
+}
+
+.apps {
+    padding: 20px 0;
+    display: flex;
+    justify-content: flex-start;
+}
+
+.app {
+    margin-right: 20px;
+}
+
+
+/* footer  */
+
+
+.function {
+    width: 100%;
+    height: 297px;
+    margin-top: 300px;
+    justify-content: space-around;
+    display: flex;
+    background-color: #0f2336;
+    align-items: baseline;
+}
+
+
+li {
+    line-height: 40px;
+    list-style-type: none;
+    color: #FFFFFF;
+}
+
+.function__right{
+    width: 400px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    margin-top: 50px;
+}
+
+li:first-child{
+    color: #00CCCC;
+
+}
+.footer {
+    max-width: 1440px;
+    position: relative;
+    margin: 0 auto;
+}
+
+/* карусель */
+#slider { /*положение слайдера*/
+    position: relative;
+	text-align: center;
+    top: 10px;
+    left: -10px;
+}
+
+#slider{ /*центровка слайдера*/
+	margin: 0 auto;
+}
+
+#slides span{ /*все изображения справа друг от доруга*/
+	width: 34%;
+	float: left;
+}
+
+#slides .image{ /*устанавливает общий размер блока с изображениями*/
+	width: 340%;
+	line-height: 0;
+    display: flex;
+    height: 350px;
+}
+
+#overflow{ /*сркывает все, что находится за пределами этого блока*/
+	width: 100%;
+	overflow: hidden;
+}
+
+
+.all input{ /*скрывает стандартные инпуты (чекбоксы) на странице*/
+	display: none;
+}
+
+/*позиция изображения при активации переключателя*/
+#switch1:checked ~ #slides .image{
+	margin-left: 0;
+}
+
+#switch2:checked ~ #slides .image{
+	margin-left: -100%;
+}
+
+#switch3:checked ~ #slides .image{
+	margin-left: -210%;
+}
+
+
+#active label{ /*стиль отдельного переключателя*/
+	border-radius: 10px; /*скругление углов*/
+	display: inline-block; /*расположение в строку*/
+	width: 15px;
+	height: 15px;
+	background: #bbb;
+}
+
+#active{ /*расположение блока с переключателями*/
+    display: block;
+}
+
+#active label:hover{ /*поведение чекбокса при наведении*/
+	background: #76c8ff;
+	border-color: #777 !important; /*выполнение в любом случае*/
+}
+
+/*цвет активного лейбла при активации чекбокса*/
+#switch1:checked ~ #active label:nth-child(1),
+#switch2:checked ~ #active label:nth-child(2),
+#switch3:checked ~ #active label:nth-child(3){
+	background: #18a3dd;
+	border-color: #18a3dd !important;
+}
+
+#slides .image{ /*анимация пролистывания изображений*/
+	transition: all 0.5s linear;
+}
+
+
+
+
+/* all media  */
+
+
+@media all and (max-width: 1024px) {
+
+    .menu__btn{
+        visibility: visible;
+    }
+    .menu__box{
+        display: none;
+        position: fixed;
+        visibility: hidden;
+        top: 0;
+        right: 120%;
+        width: 300px;
+        height: 100%;
+        margin: 0;
+        padding: 80px 0;
+        text-align: center;
+        background-color: slategray;
+        z-index: 1;
+    }
+    .nav__link{
+        display: block;
+        padding: 12px 24px;
+        font-size: 20px;
+        font-weight: 600;
+        color: #333;
+    }
+    .nav__link:hover{
+        background-color: snow;
+    }
+    .nav__link_button {
+        margin: 10px 0 0 80px;
+    }
+
+    .people__right img{
+        right: 30px;
+    }
+    .text {
+        margin-left: 450px;
+    }
+    .benefits {
+        padding-left: 100px;
+    }
+    body {
+        background-color: #F4F5F6;
+    }
+    .send{
+        margin-left: 0;
+    }
+    .store {
+        margin-top: 200px;
+    }
+    .girl__left {
+        width: 400px;
+    }
+}
+
+
+@media all and (max-width: 800px){
+    .people__right img {
+        width: 650px;
+        height: 550px;
+        opacity: 0.9;
+    }
+    .text {
+        width: 500px;
+        margin-left: 200px;
+    }
+    .orange {
+        display: none;
+    }
+    .function__left img {
+        display: none;
+    }
+    .send{
+        width: 500px;
+        margin-left: -70px;
+    }
+    .sendgift {
+        width: 500px;
+        display: flex;
+        flex-direction: column;
+        align-items: center ;
+        height: 400px;
+        margin-left: 270px;
+    }
+    .second-phone {
+        display: none;
+    } 
+
+    .store {
+        margin-top: 0px;
+
+        
+    }
+    .send {
+        margin-top: 100px;
+        height: 200px;
+    }
+    .phone-2 {
+        margin: 300px 0 200px -30px ;
+    }
+
+    .girl__inner {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+    .phone__left {
+    display: none;
+    }
+    .phone{
+        height: 500px;
+    }
+    .phone__right {
+         margin: 100px 0 0 0;
+        width: 600px;
+        height: 200px;
+        margin: 0;
+    }
+    .benefits__item{ 
+        width: 200px;
+    }
+   
+}
+
+@media all and (max-width:430px ) {
+    .people__left span{
+        font-size: 36px;
+    }
+    .people__left h1 {
+        width: 300px;
+        font-size: 36px;
+    }
+    .people__right{
+        width: 400px;
+        height: 500px;
+    }
+    /* .phone__right {
+        display: none;
+    } */
+    .phone {
+        margin-top: 100px;
+    }
+    .not__gallery, .will-none {
+        display: none;
+    }
+    .gallery {
+        display: block;
+    }
+    .image {
+        width: 300px;
+    }
+    .people__right{
+        display: none;
+    }
+    .sendgift {
+        width: 300px;
+        margin-left: 150px;
+    }
+    .text{
+        margin-left: 70px;
+        width: 300px;
+    }
+    .number{
+        flex-wrap: wrap;
+    }
+    .girl__right img {
+        margin-top: 100px;
+        width: 370px;
+        height: 360px;
+    }
+    .girl__cards {
+        width: 370px;
+        height: 125px;
+        padding: 0px;
+    }
+    #active {
+        margin: 0 auto;
+    }
+    
+}
+
